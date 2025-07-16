@@ -56,7 +56,7 @@ export default function RootLayout({
         </main>
         <footer className="w-full bg-foreground text-background py-4 mt-8 shadow-inner">
           <div className="container mx-auto text-center text-sm px-4">
-            &copy; {new Date().getFullYear()} Dusty. All rights reserved.
+            &copy; {new Date().getFullYear()} Zeus Zaragoza-Gildo. All rights reserved.
           </div>
         </footer>
       </body>
