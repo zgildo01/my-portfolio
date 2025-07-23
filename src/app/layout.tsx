@@ -31,7 +31,7 @@ export default function RootLayout({
             <h1 className="text-xl font-bold tracking-tight">My Portfolio</h1>
             <nav className="hidden md:flex gap-6">
               <Link href="/" className="hover:underline">Home</Link>
-              <Link href="/tutorial" className="hover:underline">Tutorials</Link>
+              <Link href="/tutorials" className="hover:underline">Tutorials</Link>
               <Link href="/career-journal" className="hover:underline">Career Journal</Link>
             </nav>
             {/* Mobile menu button */}
@@ -47,7 +47,7 @@ export default function RootLayout({
           {/* Mobile nav (hidden by default, can be made interactive with JS/React state later) */}
           <nav id="mobile-menu" className="md:hidden hidden flex-col gap-4 px-4 pb-4">
             <Link href="/" className="block py-2 hover:underline">Home</Link>
-            <Link href="/tutorial" className="block py-2 hover:underline">Tutorials</Link>
+            <Link href="/tutorials" className="block py-2 hover:underline">Tutorials</Link>
             <Link href="/career-journal" className="block py-2 hover:underline">Career Journal</Link>
           </nav>
         </header>
