@@ -17,7 +17,7 @@ export default function RootLayout({
       <body>
         <header>
           <div>
-            <h1>My Portfolio</h1>
+            <h1>Olympian Free Press</h1>
             <nav>
               <Link href="/">Home</Link>
               <Link href="/tutorials">Tutorials</Link>
