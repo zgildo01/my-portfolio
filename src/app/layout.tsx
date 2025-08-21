@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,37 +14,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}>
-        <header className="w-full bg-foreground text-background py-4 shadow">
-          <div className="container mx-auto flex items-center justify-between px-4">
-            <h1 className="text-xl font-bold tracking-tight">My Portfolio</h1>
-            <nav className="hidden md:flex gap-6">
-              <Link href="/" className="hover:underline">Home</Link>
-              <Link href="/tutorials" className="hover:underline">Tutorials</Link>
-              <Link href="/career-journal" className="hover:underline">Career Journal</Link>
+      <body>
+        <header>
+          <div>
+            <h1>My Portfolio</h1>
+            <nav>
+              <Link href="/">Home</Link>
+              <Link href="/tutorials">Tutorials</Link>
+              <Link href="/career-journal">Career Journal</Link>
             </nav>
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button id="mobile-menu-button" className="p-2 rounded focus:outline-none focus:ring-2 focus:ring-background focus:ring-offset-2">
-                <span className="sr-only">Open main menu</span>
-                <svg className="h-6 w-6 text-background" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+            <div>
+              <button id="mobile-menu-button">
+                <span>Open main menu</span>
+                <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
             </div>
           </div>
-          {/* Mobile nav (hidden by default, can be made interactive with JS/React state later) */}
-          <nav id="mobile-menu" className="md:hidden hidden flex-col gap-4 px-4 pb-4">
-            <Link href="/" className="block py-2 hover:underline">Home</Link>
-            <Link href="/tutorials" className="block py-2 hover:underline">Tutorials</Link>
-            <Link href="/career-journal" className="block py-2 hover:underline">Career Journal</Link>
+          <nav id="mobile-menu">
+            <Link href="/">Home</Link>
+            <Link href="/tutorials">Tutorials</Link>
+            <Link href="/career-journal">Career Journal</Link>
           </nav>
         </header>
-        <main className="container mx-auto px-4 py-8 min-h-[70vh]">
+        <main>
           {children}
         </main>
-        <footer className="w-full bg-foreground text-background py-4 mt-8 shadow-inner">
-          <div className="container mx-auto text-center text-sm px-4">
+        <footer>
+          <div>
             &copy; {new Date().getFullYear()} Zeus Zaragoza-Gildo. All rights reserved.
           </div>
         </footer>
