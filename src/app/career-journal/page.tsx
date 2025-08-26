@@ -1,3 +1,4 @@
+// app/career-journal/page.tsx
 export default function CareerJournalPage() {
   return (
     <div className="bg-[#f9f4e7] text-black min-h-screen p-8 font-serif">
@@ -8,11 +9,10 @@ export default function CareerJournalPage() {
 
       <article className="max-w-2xl mx-auto space-y-6">
         <p>
-          Placeholder for a journal entry. blah blah blah, talking about my career and stuff I learned or something and maybe also cain
+          Placeholder journal entry written in a handwriting-style font.
         </p>
         <p>
-          Another placeholder entry with doodles, sketches, or hand-drawn borders
-          (could use background textures or SVGs later).
+          Another placeholder entry with sketches or decorative margins later.
         </p>
       </article>
     </div>

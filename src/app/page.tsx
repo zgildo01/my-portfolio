@@ -1,30 +1,29 @@
 import WantedPoster from "./components/WantedPoster";
-import Tabloid from "./components/Tabloid";
+import TabloidSection from "./components/TabloidSection";
+import Masthead from "./components/Masthead";
 
 export default function HomePage() {
   return (
     <div className="p-8 bg-[#1a1a1a] text-white min-h-screen">
       {/* Masthead */}
-      <header className="text-center border-b-4 border-black pb-4 mb-8">
-        <h1 className="text-6xl font-extrabold">Olympian Free Press</h1>
-        <p className="text-lg">Est. 2025</p>
-      </header>
+      <Masthead />
+
+      {/* Page Headline*/}
+      <h2 className="text-4xl font-bold text-center mb-6 uppercase">
+        Suspect on the loose on the internet!
+      </h2>
 
       {/* Wanted Poster */}
       <WantedPoster />
 
       {/* Tabloid Sections */}
-      <section className="grid md:grid-cols-3 gap-6 mt-8">
-        <Tabloid title="Experience">
-          Placeholder content for experience.
-        </Tabloid>
-        <Tabloid title="Interests">
-          Placeholder content for interests.
-        </Tabloid>
-        <Tabloid title="Skills">
-          Placeholder content for skills.
-        </Tabloid>
-      </section>
+      <TabloidSection
+        items={[
+          { title: "Experience", content: "Lots of text about experience AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" },
+          { title: "Interests", content: "Shorter text here..." },
+          { title: "Skills", content: "Even more text here..." },
+        ]}
+      />
     </div>
   );
 }

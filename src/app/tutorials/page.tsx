@@ -1,17 +1,23 @@
-import Tabloid from "../components/Tabloid";
+import Masthead from "../components/Masthead";
+import TabloidSection from "../components/TabloidSection";
 
 export default function TutorialsPage() {
   return (
     <div className="p-8 bg-[#1a1a1a] text-white min-h-screen">
-      <header className="text-center border-b-4 border-black pb-4 mb-8">
-        <h1 className="text-6xl font-extrabold">Olympian Free Press — Tutorials</h1>
-      </header>
+      <Masthead />
 
-      <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <Tabloid title="Tutorial 1">Placeholder tutorial preview.</Tabloid>
-        <Tabloid title="Tutorial 2">Placeholder tutorial preview.</Tabloid>
-        <Tabloid title="Tutorial 3">Placeholder tutorial preview.</Tabloid>
-      </section>
+      <h2 className="text-4xl font-bold text-center mb-6 uppercase">
+        Local Guides
+      </h2>
+
+      <TabloidSection
+        items={[
+          { title: "Tutorial 1", content: "Placeholder tutorial preview." },
+          { title: "Tutorial 2", content: "Another preview." },
+          { title: "Tutorial 3", content: "Yet another preview." },
+        ]}
+      />
+
     </div>
   );
 }

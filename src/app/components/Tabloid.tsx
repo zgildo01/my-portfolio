@@ -7,9 +7,13 @@ type TabloidProps = {
 
 export default function Tabloid({ title, children }: TabloidProps) {
   return (
-    <div className="border border-black p-4 flex flex-col gap-2 bg-white/90 dark:bg-[#f4e1c1]">
-      <h2 className="text-xl font-bold text-center">{title}</h2>
-      <p className="text-sm">{children}</p>
+    <div className="w-full border border-black p-6 bg-white/90 dark:bg-[#f4e1c1] break-words">
+      <h2 className="text-2xl font-bold text-center mb-4">
+        {title}
+      </h2>
+      <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 text-base leading-relaxed">
+        {children}
+      </div>
     </div>
   );
 }
