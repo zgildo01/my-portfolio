@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function WantedPoster() {
   return (
-    <div className="border-4 border-black max-w-xl mx-auto my-8 p-6 text-center bg-white/90 dark:bg-[#f4e1c1]">
+    <div className="border-4 border-black max-w-xl mx-auto my-8 p-6 text-center bg-white/90 dark:bg-[#f4e1c1] text-black">
       <h1 className="text-5xl font-extrabold mb-4">WANTED</h1>
       <p className="mb-2">
         Placeholder description about who you are. (This will be updated later)
