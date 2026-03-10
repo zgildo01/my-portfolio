@@ -16,9 +16,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <header>
-          <div>
-            <h1>Olympian Free Press</h1>
-            <nav className="hidden lg:block">
+          <div className="flex items-center justify-between">
+            <nav className="hidden lg:block flex">
               <Link href="/">Home</Link>
               <Link href="/tutorials">Tutorials</Link>
               <Link href="/career-journal">Career Journal</Link>
@@ -34,9 +33,10 @@ export default function RootLayout({
                 </svg>
               </button>
             </div>
+            <h1>Olympian Free Press</h1>
           </div>
           {mobileMenuOpen && (
-            <nav id="mobile-menu" className="lg:hidden">
+            <nav id="mobile-menu" className="lg:hidden flex flex-col space-y-2">
               <Link href="/">Home</Link>
               <Link href="/tutorials">Tutorials</Link>
               <Link href="/career-journal">Career Journal</Link>
