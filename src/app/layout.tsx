@@ -36,7 +36,7 @@ export default function RootLayout({
             <h1>Olympian Free Press</h1>
           </div>
           {mobileMenuOpen && (
-            <nav id="mobile-menu" className="lg:hidden flex flex-col space-y-2">
+            <nav id="mobile-menu" className="lg:hidden flex flex-col items-center space-y-2 *:px-3 *:py-1 *:m-1 p-3">
               <Link href="/">Home</Link>
               <Link href="/tutorials">Tutorials</Link>
               <Link href="/career-journal">Career Journal</Link>
