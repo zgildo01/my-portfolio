@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import "./globals.css";
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -17,7 +16,7 @@ export default function RootLayout({
       <body>
         <header>
           <div className="flex items-center justify-between">
-            <nav className="hidden lg:block flex">
+            <nav className="hidden lg:block flex *:px-3 *:py-1 *:m-1 p-3">
               <Link href="/">Home</Link>
               <Link href="/tutorials">Tutorials</Link>
               <Link href="/career-journal">Career Journal</Link>
