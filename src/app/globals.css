@@ -41,3 +41,19 @@ header, footer {
   background-color: #808080;
   color: #000000;
 }
+
+.font-masthead {
+  font-family: var(--font-chomsky);
+}
+
+.font-body {
+  font-family: var(--font-caslon-antique);
+}
+
+.font-UI {
+  font-family: var(--font-news-gothic);
+}
+
+.font-headline {
+  font-family: var(--font-fell-english);
+}

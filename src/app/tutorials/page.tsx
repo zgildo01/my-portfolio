@@ -6,7 +6,7 @@ export default function TutorialsPage() {
     <div className="p-8 bg-[#1a1a1a] text-black min-h-screen">
       <Masthead />
 
-      <h2 className="text-4xl font-bold text-center mb-6 uppercase">
+      <h2 className="text-4xl font-bold text-center mb-6 uppercase font-headline">
         Local Guides
       </h2>
 

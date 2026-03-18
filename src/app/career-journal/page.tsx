@@ -3,7 +3,7 @@ export default function CareerJournalPage() {
   return (
     <div className="bg-[#f9f4e7] text-black min-h-screen p-8 font-serif">
       <header className="text-center mb-6">
-        <h1 className="text-5xl font-bold">Career Journal</h1>
+        <h1 className="text-5xl font-bold font-headline">Career Journal</h1>
         <p className="italic">Notes & sketches along the way...</p>
       </header>
 
